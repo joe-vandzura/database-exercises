@@ -10,4 +10,4 @@ select * from employees where (last_name like 'E%') or (last_name like '%e');
 
 select * from employees where (last_name like 'E%') and (last_name like '%e');
 
-select * from employees where (last_name like '%q%') and (not last_name like '%qu%');;
+select * from employees where (last_name like '%q%') and (not last_name like '%qu%');
