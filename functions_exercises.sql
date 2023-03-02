@@ -15,3 +15,5 @@ select * from employees where (last_name like '%q%') and (not last_name like '%q
 select * from employees where month(birth_date) = 12 and day(birth_date) = 25;
 
 select concat(datediff(now(), hire_date), ' days') from employees where (month(birth_date) = 12 and day(birth_date) = 25) and year(hire_date) between 1990 and 1999 order by hire_date desc;
+
+select first_name, count(*) from employees group by first_name;
